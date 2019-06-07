@@ -1,8 +1,8 @@
-# p1-phaseolus-vulgaris
+#p1-phaseolus-vulgaris
 
-### A phan page
+###A phan page
 
-##### **This app is a very simple homage to the humble black bean. The design will be very clean and have a mobil centric design. ** 
+#####This app is a very simple homage to the humble black bean. The design will be very clean and have a mobil centric design.
 
 This app will incorporate HTML, CSS, JavaScript, and will pull external data from a recipe website, most likely, Edamam (alternate Food2Fork), as per project requirements. I also hope to have a section of "learn more" where people can search for cookbooks on legume-centric and vegetarian cuisine, in a second API from google books, time permitting.
 
