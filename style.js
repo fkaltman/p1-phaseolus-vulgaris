@@ -2,7 +2,7 @@ const DOMAIN = 'https://api.edamam.com/search';
 const API_KEY = 'd3c898c7d464fa12837f2d46ad960a11';
 const APP_ID = 'bea133e4';
 
-const BASE_URL = `${DOMAIN}?q=beans&app_id=${APP_ID}&app_key=${API_KEY}`;
+const BASE_URL = `${DOMAIN}?q=blackbeans&app_id=${APP_ID}&app_key=${API_KEY}`;
 // add &vegetarian to the above line after everthing is working
 let button = document.querySelector('button');
 const input = document.querySelector('input');
@@ -12,30 +12,33 @@ const list = document.querySelector('.recipe-list');
 //   // console.log(recipe)
 //   const recipeCard = document.createElement('div');
 //   recipeCard.innerHTML = `
-//    <button>Save to favorites.</button>
-//    `;
+//     <img src = ${data.hits[0].recipe.image} />
+//   //<button>Stuff</button>
+//   `;
 
 //   list.appendChild(recipeCard)
 // }
 
-
-
-// < !--Edamam's example using "curl":
-// curl "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free" -->
-
-
-//Current results are not vegetarian with either of the searches below
-// https://api.edamam.com/search?q=blackbeans&app_id=bea133e4&app_key=d3c898c7d464fa12837f2d46ad960a11&healthLabels=vegetarian
-
-// https://api.edamam.com/search?q=blackbeans&app_id=bea133e4&app_key=d3c898c7d464fa12837f2d46ad960a11&vegetarian
-
+//Current results are not vegetarian with either of the searches below:
+//&healthLabels=vegetarian
+//&vegetarian
 
 const searchRecipe = async () => {
-  const searchRecipe = `${BASE_URL}`;
-  const response = await axios.get(`${DOMAIN}?q=beans&app_id=${APP_ID}&app_key=${API_KEY}`);
-  console.log(response);
-  // render(response.data.Search);
+  const searchRecipe = `${BASE_URL} `;
+  const response = await axios.get(`${BASE_URL} `);
 
+  console.log(response);
+  const makeACard = (recipe) => {
+    // console.log(recipe)
+    const recipeCard = document.createElement('div');
+    recipeCard.innerHTML = `
+      <img src = ${response.data.hits[0].recipe.image} />
+    //<button>Stuff</button>
+    `;
+
+    list.appendChild(recipeCard)
+  }
+  makeACard(response.data.hits[0].recipe.image)
 }
 
 button.addEventListener('click', () => {
