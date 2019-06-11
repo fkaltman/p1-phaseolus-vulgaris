@@ -11,7 +11,7 @@ button.addEventListener("click", async () => {
   const recipes = response.data.hits
   const random = Math.floor(Math.random() * recipes.length)
   const randomRecipe = recipes[random].recipe
-  div.innerHTML = `<a href=${randomRecipe.url}><p>${randomRecipe.label}</p></a><br><img src=${randomRecipe.image}>`
+  div.innerHTML = `<a href=${randomRecipe.url}><p>${randomRecipe.label}</p></a><br><img src=${randomRecipe.image} class=foodPic>`
 
 
   // console.log(response);

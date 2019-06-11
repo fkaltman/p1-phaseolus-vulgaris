@@ -1,0 +1,74 @@
+html {
+  min-height: 100%
+}
+  
+body {
+  background-image: radial-gradient(ellipse, white, #3f87a6);
+}
+
+.pow {
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+  background: url(/images/pow_bubble.png);
+  background-size: 320px;
+  background-position: center center;
+  background-repeat:no-repeat;
+  text-align: center;
+  padding-top: 140px;
+}
+
+img .foodPic{
+  border-radius: 20px;
+}
+
+img {
+  /* margin-top: 90px; */
+  width: 70%;
+}
+
+p {
+  padding-top: 40px;
+  text-decoration: none;
+  color: rgb(99, 36, 28);
+  font-size: 26px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+h3 {
+
+  text-decoration: none;
+  color: rgb(99, 36, 28);
+  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  text-align: bottom;
+  text-align: center
+   
+
+}
+
+
+button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 150px;
+  border: none;
+  height: 50vw;
+  width: 50vw;
+  background: url(/images/black_bean.png);
+  background-size: cover;
+}
+
+/* footer not set up yet
+
+footer {
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+  font-weight: 800;
+  color: rgb(99, 36, 28);
+}
