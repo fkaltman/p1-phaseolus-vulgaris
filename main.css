@@ -4,65 +4,99 @@ html {
   
 body {
   background-image: radial-gradient(ellipse, white, #3f87a6);
+  margin: 0;
 }
 
-img .foodPic{
-  border-radius: 20px;
+#container {
+  max-width: 400px;
+  margin:0 auto;
 }
 
-img {
-  /* margin-top: 90px; */
+img.foodPic {
+  border-radius: 5px;
+}
+
+#muse {
+  margin-top: 90%;
+}
+
+#page1 {
+  position: relative;
+}
+
+#page2 {
+  display: none;
+  text-align: center;
+}
+
+#pow {
+  position: relative;
+  left: 15%;
+  margin-top: 10%;
   width: 70%;
 }
 
+.link {
+  text-decoration: none;
+}
+
+#bean {
+  position: absolute;
+  top: 70px;
+  left: 25%;
+  width: 40%;
+  animation: shake 2s;
+  animation-iteration-count: 4;
+}
+
+#bean:hover, #bean2:hover {
+  cursor: pointer;
+  animation: shake 2s;
+  animation-iteration-count: infinite;
+}
+
+#bean2 {
+  width: 150px;
+  margin-top: 10px;
+  animation: shake 2s;
+  animation-iteration-count: 2;
+}
+
 p {
-  padding-top: 40px;
+  margin: 15px;
+  /* padding-top: 235px; */
   text-decoration: none;
-  color: rgb(99, 36, 28);
-  font-size: 26px;
+  color: rgb(60, 107, 109);
+  font-size: 13px;
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  
 }
 
-h3 {
-  text-decoration: none;
-  color: rgb(99, 36, 28);
-  font-size: 16px;
-  font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
-  text-align: bottom;
-  text-align: center
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  15% { transform: rotate(0deg); }
+  30% { transform: rotate(-10deg); }
+  45% { transform: rotate(10deg); } 
+  60% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  87% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
 }
 
-.pow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto 0;
-  background: url("./images/pow_bubble.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat:no-repeat;
-  text-align: center;
-  width: 100px;
-  height: 100px;
-}
 
-button.bean {
-  text-align: center;
-  border: none;
-  height: 50%;
-  width: 50%;
-  background: url("./images/black_bean.png");
-  background-size: cover;
-}
+@media only screen 
+  and (max-width: 400px){
+    #bean, #bean2 {
+      animation: shake 2s;
+      animation-iteration-count: infinite;
+    }
 
-/* footer not set up yet
-footer {
-  font-family: 'Rubik', sans-serif;
-  text-align: center;
-  font-weight: 800;
-  color: rgb(99, 36, 28);
-}
+    h1 {
+      font-size: 28px;
+    }
+  }
+
+
+
+
