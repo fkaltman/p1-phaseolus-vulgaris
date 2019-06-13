@@ -15,7 +15,7 @@ bean.addEventListener("click", async () => {
   const randomRecipe = recipes[random].recipe
   page1.style.display = "none"
   page2.style.display = "block"
-  recipe.innerHTML = `<a class="link" href=${randomRecipe.url}><p>${randomRecipe.label}</p></a><br><img src=${randomRecipe.image} class="foodPic">`
+  recipe.innerHTML = `<a class="link" href=${randomRecipe.url}><p id="name">${randomRecipe.label}</p></a><br><img src=${randomRecipe.image} class="foodPic">`
 });
 
 bean2.addEventListener("click", async () => {

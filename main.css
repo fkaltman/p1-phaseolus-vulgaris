@@ -40,6 +40,14 @@ img.foodPic {
   text-decoration: none;
 }
 
+p {
+  padding-top: 30px;
+}
+
+#name {
+  font-size: 24px;
+}
+
 #bean {
   position: absolute;
   top: 70px;
