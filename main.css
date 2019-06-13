@@ -1,7 +1,10 @@
+/* The min-height was specified to stop 
+the radial-gradient background from tiling. */
 html {
   min-height: 100%
 }
-  
+
+/* Turquoise radial-gradient added */
 body {
   background-image: radial-gradient(ellipse, white, #3f87a6);
   margin: 0;
@@ -17,18 +20,33 @@ img.foodPic {
 }
 
 #muse {
-  margin-top: 90%;
+  margin-top: 80%;
 }
 
+/* Set up to center the pow bubble */
 #page1 {
   position: relative;
 }
 
-#page2 {
-  display: none;
+#clickme {
   text-align: center;
+  color: rgb(60, 107, 109);
+  font-size: 13px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
 }
 
+#page2 {
+  /* display: none; */
+  text-align: center;
+  color: rgb(60, 107, 109);
+  font-size: 13px;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  display: none;
+}
+
+/* Centering of the pow bubble in relation to the pg1 bean */
 #pow {
   position: relative;
   left: 15%;
@@ -36,6 +54,10 @@ img.foodPic {
   width: 70%;
 }
 
+/* Removes the underline of the first recipe displayed 
+as well as all subsequent recipes links. This required assigning the
+class of "link" separately to the html inserted after both 
+axios calls. */
 .link {
   text-decoration: none;
 }
@@ -44,43 +66,56 @@ p {
   padding-top: 30px;
 }
 
-#name {
+/* Styles the recipe link added to the html with JS */
+#recipelink {
   font-size: 24px;
 }
 
+/* Centering of the bean in relation to the pow bubble */
 #bean {
   position: absolute;
   top: 70px;
   left: 25%;
   width: 40%;
   animation: shake 2s;
-  animation-iteration-count: 4;
+  /* Sets the number of times the bean will jam upon page load.*/
+  animation-iteration-count: 2;
 }
 
+
+/* Sets off the boogie animation in response to hover & changes the cursor to the pointer 
+when you hover over the bean in an environment with mouse use. */
 #bean:hover, #bean2:hover {
   cursor: pointer;
+  /* Sets the interval between jam sessions. */
   animation: shake 2s;
+  /* Sets the number of times the bean will jam upon page load.*/
   animation-iteration-count: infinite;
 }
 
+/* Styled the second bean, from "page2" */
 #bean2 {
-  width: 150px;
-  margin-top: 10px;
+  width: 100px;
+  margin-top: 50px;
+  margin-bottom: 0;
+   /* Sets the interval between jam sessions. */
   animation: shake 2s;
-  animation-iteration-count: 2;
+  /* Sets the number of times the bean will jam upon page load.*/
+  animation-iteration-count: 4;
 }
 
 p {
   margin: 15px;
-  /* padding-top: 235px; */
   text-decoration: none;
   color: rgb(60, 107, 109);
-  font-size: 13px;
+  font-size: 15px;
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
+/*K Used keyframes tutorial on w3 for the animation below.
+https://www.w3schools.com/howto/howto_css_shake_image.asp */
 @keyframes shake {
   0% { transform: rotate(0deg); }
   15% { transform: rotate(0deg); }
@@ -93,6 +128,9 @@ p {
 }
 
 
+/* Because there is no hover on mobile, the bean is set 
+to party mode (jam indefinately) in mobile environments, rather 
+than responding to mouse hover. */
 @media only screen 
   and (max-width: 400px){
     #bean, #bean2 {
