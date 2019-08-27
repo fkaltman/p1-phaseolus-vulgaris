@@ -1,38 +1,53 @@
 /* The min-height was specified to stop 
 the radial-gradient background from tiling. */
 html {
-  min-height: 100%
+  min-height: 100%;
 }
 
-/* Turquoise radial-gradient added */
 body {
-  background-image: radial-gradient(ellipse, white, #3f87a6);
+  background-image: radial-gradient(ellipse, #668c9c, #255368);
   margin: 0;
 }
 
-#container {
+/* #container {
   max-width: 400px;
   margin:0 auto;
-}
+} */
 
 img.foodPic {
   border-radius: 5px;
 }
 
+h2 {
+  /* font-family: 'Chango', cursive;  */
+  font-family: 'Reenie Beanie', cursive;
+  color: rgb(230, 198, 59);
+  font-size: 38px;
+  padding-top: 5vh;
+  text-align: center;
+  margin-bottom:  0vh;
+}
+
 #muse {
-  margin-top: 80%;
+  margin-top: 8vh;
+  font-size: 24px;
+  font-family: 'Chango', cursive;
+  text-align: center;
 }
 
-/* Set up to center the pow bubble */
-#page1 {
-  position: relative;
+#click-beanie {
+  font-size: 15px;
+  text-align: left;
+  padding-top: 17vh;
+  margin-left: 6vw;
+  font-family: 'Chango', cursive;
+  color: blanchedalmond;
 }
 
-#clickme {
+#click-me {
   text-align: center;
   color: rgb(60, 107, 109);
   font-size: 13px;
-  font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
 }
 
@@ -46,72 +61,63 @@ img.foodPic {
   display: none;
 }
 
-/* Centering of the pow bubble in relation to the pg1 bean */
-#pow {
-  position: relative;
-  left: 15%;
-  margin-top: 10%;
-  width: 70%;
-}
 
-/* Removes the underline of the first recipe displayed 
-as well as all subsequent recipes links. This required assigning the
-class of "link" separately to the html inserted after both 
-axios calls. */
+/* Removes the underline of all recipes links. 
+This required assigning the class of "link" separately 
+to the html inserted after both axios calls. */
 .link {
   text-decoration: none;
 }
 
-p {
-  padding-top: 30px;
-}
-
 /* Styles the recipe link added to the html with JS */
 #recipelink {
-  font-size: 24px;
+  /* padding: 2vh 0 0 0; */
+  font-size: 20px;
+  text-decoration: bold;
+  color: rgb(230, 198, 59);
+  font-family: 'Chango', cursive;
 }
 
 /* Centering of the bean in relation to the pow bubble */
 #bean {
-  position: absolute;
-  top: 70px;
-  left: 25%;
-  width: 40%;
+  position: fixed;
+  bottom: 0px;
+  top: 54vh;
+  left: 12vw;
+  width: 88%;
+}
+
+/* Sets off the boogie animation in response to hover & changes the cursor to the pointer 
+when you hover over the bean in an environment with mouse use. */
+ #bean2:hover {
+  cursor: pointer;
+  /* Sets the interval between jam sessions. */
   animation: shake 2s;
   /* Sets the number of times the bean will jam upon page load.*/
   animation-iteration-count: 2;
 }
 
-
-/* Sets off the boogie animation in response to hover & changes the cursor to the pointer 
-when you hover over the bean in an environment with mouse use. */
-#bean:hover, #bean2:hover {
-  cursor: pointer;
-  /* Sets the interval between jam sessions. */
-  animation: shake 2s;
-  /* Sets the number of times the bean will jam upon page load.*/
-  animation-iteration-count: infinite;
-}
-
 /* Styled the second bean, from "page2" */
 #bean2 {
   width: 100px;
-  margin-top: 50px;
-  margin-bottom: 0;
+  margin: 0 0 0 3vw;
    /* Sets the interval between jam sessions. */
   animation: shake 2s;
   /* Sets the number of times the bean will jam upon page load.*/
-  animation-iteration-count: 4;
+  animation-iteration-count: 2;
 }
 
-p {
-  margin: 15px;
-  text-decoration: none;
-  color: rgb(60, 107, 109);
-  font-size: 15px;
-  font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
+.side-by-side {
+display: flex;
+justify-content: space-evenly;
+margin-top: 2vh;
+}
+
+#click-me {
+  font-size: 12px;
+  font-family: 'Chango', cursive;
+  color: cadetblue;
+  /* text-align: right; */
 }
 
 /*K Used keyframes tutorial on w3 for the animation below.
@@ -127,15 +133,21 @@ https://www.w3schools.com/howto/howto_css_shake_image.asp */
   100% { transform: rotate(0deg); }
 }
 
+h6 {
+  font-family: 'Chango', cursive;
+  font-size: 12px;
+  color: cadetblue;
+  margin: 2vh 0 0 0;
+}
 
 /* Because there is no hover on mobile, the bean is set 
 to party mode (jam indefinately) in mobile environments, rather 
 than responding to mouse hover. */
 @media only screen 
   and (max-width: 400px){
-    #bean, #bean2 {
+     #bean2 {
       animation: shake 2s;
-      animation-iteration-count: infinite;
+      animation-iteration-count: 1;
     }
 
     h1 {
