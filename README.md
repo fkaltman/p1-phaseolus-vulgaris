@@ -1,8 +1,7 @@
 # beanSEARCH
 
-http://bb_recipes.surge.sh
+http://beansearch.surge.sh
 
-### A phan page
 
 ##### This app is a simple homage to the humble black bean. The design is mobil centric, because I think most poeple view recipe websites on their mobile devices.
 
