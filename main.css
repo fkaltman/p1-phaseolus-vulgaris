@@ -51,6 +51,7 @@ h2 {
   position: fixed;
   bottom: 0;
   right: 0;
+  /* change below to vw */
   width: 88%;
   max-width: 700px;
 }
@@ -92,8 +93,9 @@ to the html inserted after both axios calls. */
 
 /* Styles the recipe link added to the html with JS */
 
-/* Sets off the boogie animation in response to hover & changes the cursor to the pointer 
-when you hover over the bean in an environment with mouse use. */
+/* Sets off the boogie animation in response to hover 
+& changes the cursor to the pointer when you hover over 
+the bean in an environment with mouse use. */
 #bean2:hover {
   cursor: pointer;
   /* Sets the interval between jam sessions. */
@@ -104,6 +106,7 @@ when you hover over the bean in an environment with mouse use. */
 
 /* Styled the second bean, from "page2" */
 #bean2 {
+  /* change below to vw? */
   width: 100px;
   margin: 0 0 0 3vw;
   /* Sets the interval between jam sessions. */
