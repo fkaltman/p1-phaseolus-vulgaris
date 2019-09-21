@@ -14,7 +14,6 @@ img.foodPic {
 }
 
 h2 {
-  /* font-family: 'Chango', cursive;  */
   font-family: 'Reenie Beanie', cursive;
   color: rgb(230, 198, 59);
   font-size: 38px;
@@ -51,9 +50,8 @@ h2 {
   position: fixed;
   bottom: 0;
   right: 0;
-  /* change below to vw */
-  width: 88%;
-  max-width: 700px;
+  width: 40vw;
+  /* max-width: 700px; */
 }
 
 /* ///////////////////////////// */
@@ -91,8 +89,6 @@ to the html inserted after both axios calls. */
   text-decoration: none;
 }
 
-/* Styles the recipe link added to the html with JS */
-
 /* Sets off the boogie animation in response to hover 
 & changes the cursor to the pointer when you hover over 
 the bean in an environment with mouse use. */
@@ -107,8 +103,8 @@ the bean in an environment with mouse use. */
 /* Styled the second bean, from "page2" */
 #bean2 {
   /* change below to vw? */
-  width: 100px;
-  margin: 0 0 0 3vw;
+  width: 10vw;
+  /* margin: 0 0 0 3vw; */
   /* Sets the interval between jam sessions. */
   animation: shake 2s;
   /* Sets the number of times the bean will jam upon page load.*/
@@ -160,7 +156,7 @@ h6 {
 @media only screen 
 and (min-width: 800px) {
   #bean {
-    width: 400px;
+    width: 40vw;
   }
  }
 
@@ -171,8 +167,7 @@ and (min-width: 800px)
     position: fixed;
     bottom: 0;
     right: 0;
-    width: 65%;
-    /* max-width: 400px; */
+    /* width: 80vw; */
   }
   
   #muse {
@@ -222,15 +217,6 @@ and (min-width: 800px)
     text-decoration: bold;
     color: rgb(230, 198, 59);
     font-family: 'Chango', cursive;
-  }
-  
-  #page2 {
-    text-align: center;
-    color: rgb(60, 107, 109);
-    font-size: 13px;
-    font-family: 'Rubik', sans-serif;
-    text-transform: uppercase;
-    display: none;
   }
   
   .side-by-side {
