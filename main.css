@@ -102,9 +102,7 @@ the bean in an environment with mouse use. */
 
 /* Styled the second bean, from "page2" */
 #bean2 {
-  /* change below to vw? */
-  width: 10vw;
-  /* margin: 0 0 0 3vw; */
+  width: 20vw;
   /* Sets the interval between jam sessions. */
   animation: shake 2s;
   /* Sets the number of times the bean will jam upon page load.*/
@@ -112,9 +110,11 @@ the bean in an environment with mouse use. */
 }
 
 .side-by-side {
-  width: 300px;
-  display: flex;
-  justify-content: space-evenly;
+  width: 70vw;
+  /* width: 300px; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* justify-content: space-evenly; */
   margin-top: 2vh;
   margin-left: auto;
   margin-right: auto;
