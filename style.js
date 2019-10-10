@@ -7,15 +7,20 @@ const appId = 'bea133e4';
 const baseURL = "https://api.edamam.com/search?"
 const search = `q=blackbeans&blackbean&excluded=pork&excluded=turkey&excluded=beef&excluded=chicken&excluded=sausage&app_id=${appId}&app_key=${apiKey}`
 
-//The below variables grab html elements for ease of use and 
-// readability in the api calls taht follow
+// The below variables grab html elements for ease of use and 
+// readability in the api calls that follow
 const bean = document.querySelector('#bean');
 const bean2 = document.querySelector('#bean2');
 const recipe = document.querySelector('#recipe');
 const page1 = document.querySelector("#page1")
 const page2 = document.querySelector("#page2")
 
-//The below axios call pulls a random recipe from Edamam using Math.random, rounding down to a whole number with Math.floor to avoid generating floats. Random number multiplied by the lenght of recipes available pulls a random recipe from the entire selection that fits the requirements specified in the original axios call (e.g. include recipes with black beans but filter out meats).
+//The below axios call pulls a random recipe from Edamam using Math.random, 
+// to round down to a whole number with Math.floor to avoid generating floats.
+// Random number multiplied by the length of recipes available pulls a random 
+// recipe from the entire selection that fits the requirements specified in the 
+// original axios call (e.g.include recipes with black beans but filter out meats).
+
 bean.addEventListener("click", async () => {
   const response = await axios.get(`${baseURL}${search} `)
   const recipes = response.data.hits
