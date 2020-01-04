@@ -158,6 +158,10 @@ and (min-width: 800px) {
   #bean {
     width: 40vw;
   }
+  img.foodPic {
+    border-radius: 5px;
+    width: 40vw;
+  }
  }
 
  @media only screen 
