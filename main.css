@@ -31,8 +31,7 @@ h2 {
 }
 
 #muse-hidden-text-desktop {
-  /* padding-left: 9vw; */
-  margin-top: 20vh;
+  margin: 20vh 8vw 0 8vw;
   font-size: 2em;
   font-family: 'Chango', cursive;
   text-align: center;
@@ -53,7 +52,10 @@ h2 {
   bottom: 0;
   right: 0;
   width: 40vw;
-  /* max-width: 700px; */
+}
+
+.bean-pic:hover {
+  cursor: pointer;
 }
 
 /* ///////////////////////////// */
@@ -74,18 +76,21 @@ h2 {
   font-family: 'Chango', cursive;
 }
 
+img.foodPic {
+  border-radius: 5px;
+}
+
 #page2 {
-  /* display: none; */
   text-align: center;
   color: rgb(60, 107, 109);
   font-size: 13px;
   font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   display: none;
+  padding-top:6vh;
 }
 
-/* Removes the underline of all recipes links. 
-This required assigning the class of "link" separately 
+/* This required assigning the class of "link" separately 
 to the html inserted after both axios calls. */
 .link {
   text-decoration: none;
@@ -95,7 +100,7 @@ to the html inserted after both axios calls. */
 & changes the cursor to the pointer when you hover over 
 the bean in an environment with mouse use. */
 #bean2:hover {
-  cursor: pointer;
+  /* cursor: pointer; */
   /* Sets the interval between jam sessions. */
   animation: shake 2s;
   /* Sets the number of times the bean will jam upon page load.*/
@@ -154,6 +159,25 @@ h6 {
 /* /////// Media Queries ////////*/
 /* ///////////////////////////// */
 
+@media only screen 
+and (min-width: 1201px) {
+  img.foodPic {
+    width: 40vw;
+  }
+
+}
+
+@media only screen 
+and (min-width: 760px) and (max-width: 1200px){
+
+  .recipe-selection {
+    padding-top: -2vh;
+  }
+  img.foodPic {
+    width: 75vw;
+  }
+}
+
 
 @media only screen 
 and (min-width: 800px) 
@@ -187,10 +211,6 @@ and (min-width: 800px)
 
   /* //// Page 2 Media Queries ////*/
 
-  img.foodPic {
-    border-radius: 5px;
-    width: 40vw;
-  }
   
   #click-me {
     text-align: center;
@@ -201,13 +221,11 @@ and (min-width: 800px)
   }
   
   #page2 {
-    /* display: none; */
-    text-align: center;
-    color: rgb(60, 107, 109);
-    font-size: 13px;
-    font-family: 'Rubik', sans-serif;
-    text-transform: uppercase;
-    display: none;
+    /* text-align: center; */
+    /* color: rgb(60, 107, 109); */
+    /* font-size: 13px; */
+    /* font-family: 'Rubik', sans-serif; */
+    /* text-transform: uppercase; */
   }
   
   #recipelink {
