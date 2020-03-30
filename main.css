@@ -10,25 +10,22 @@ body {
   margin: 0;
 }
 
-img.foodPic {
-  border-radius: 5px;
-}
-
-h2 {
-  font-family: 'Reenie Beanie', cursive;
-  color: rgb(230, 198, 59);
-  font-size: 38px;
-  padding-top: 5vh;
-  text-align: center;
-  margin-bottom:  0vh;
-}
-
 #muse-text {
-  margin-top: 14vh;
-  font-size: 24px;
+  margin-top: 8vh;
+  font-size: 1em;
   font-family: 'Chango', cursive;
   text-align: center;
+  color: rgb(39, 38, 38);
 }
+
+.hero-title {
+  margin-top: 12vh;
+  font-size: 2.2em !important;
+  color: rgb(230, 198, 59);
+  padding-bottom: 2vh;
+  font-family: 'Chango', cursive;
+  text-align: center;
+  }
 
 #muse-hidden-text-desktop {
   margin: 20vh 8vw 0 8vw;
@@ -61,6 +58,19 @@ h2 {
 /* ///////////////////////////// */
 /* //////////  Page 2  ///////// */
 /* ///////////////////////////// */
+
+img.foodPic {
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: 'Reenie Beanie', cursive;
+  color: rgb(230, 198, 59);
+  font-size: 38px;
+  padding-top: 5vh;
+  text-align: center;
+  margin-bottom:  0vh;
+}
 
 #click-me {
   text-align: center;
