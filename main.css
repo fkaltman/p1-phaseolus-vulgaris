@@ -2,6 +2,7 @@
 the radial-gradient background from tiling. */
 html {
   min-height: 100%;
+  min-width: 100%;
 }
 
 body {
@@ -23,15 +24,16 @@ h2 {
 }
 
 #muse-text {
-  margin-top: 8vh;
+  margin-top: 14vh;
   font-size: 24px;
   font-family: 'Chango', cursive;
   text-align: center;
 }
 
 #muse-hidden-text-desktop {
-  margin-top: 8vh;
-  font-size: 24px;
+  /* padding-left: 9vw; */
+  margin-top: 20vh;
+  font-size: 2em;
   font-family: 'Chango', cursive;
   text-align: center;
   display: none;
@@ -154,24 +156,13 @@ h6 {
 
 
 @media only screen 
-and (min-width: 800px) {
-  #bean {
-    width: 40vw;
-  }
-  img.foodPic {
-    border-radius: 5px;
-    width: 40vw;
-  }
- }
-
- @media only screen 
 and (min-width: 800px) 
- {
+{
   #bean {
+    width: 40vw;
     position: fixed;
     bottom: 0;
     right: 0;
-    /* width: 80vw; */
   }
   
   #muse {
@@ -185,8 +176,6 @@ and (min-width: 800px)
 
   #muse-hidden-text-desktop {
     display: block;
-    position: fixed;
-    margin: 8vh 10% 0 10%;
   }
   
   #click-beanie {
@@ -197,6 +186,11 @@ and (min-width: 800px)
   
 
   /* //// Page 2 Media Queries ////*/
+
+  img.foodPic {
+    border-radius: 5px;
+    width: 40vw;
+  }
   
   #click-me {
     text-align: center;

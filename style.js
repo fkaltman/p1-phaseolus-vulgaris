@@ -35,7 +35,8 @@ bean.addEventListener("click", async () => {
   recipe.innerHTML = `<a class="link" href=${randomRecipe.url}><p id="recipelink">${randomRecipe.label}</p></a><br><img src=${randomRecipe.image} class="foodPic">`
 });
 
-//Second axios call replaces the first random recipe with different random recipe on the users click and updates the html and thus the display, accordingly.
+//Second axios call replaces the first random recipe with different random recipe 
+// on the users click and updates the html and thus the display, accordingly.
 bean2.addEventListener("click", async () => {
   const response = await axios.get(`${baseURL}${search} `)
   const recipes = response.data.hits
