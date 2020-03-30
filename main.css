@@ -39,7 +39,7 @@ body {
 #click-beanie {
   font-size: 15px;
   text-align: left;
-  padding-top: 17vh;
+  padding-top: 37vh;
   margin-left: 6vw;
   font-family: 'Chango', cursive;
   color: blanchedalmond;
@@ -186,6 +186,14 @@ and (min-width: 1201px) {
   #muse-hidden-text-desktop {
     margin-top: 10vh;
   }
+
+  #click-beanie {
+    font-size: 15px;
+    text-align: left;
+    padding-top: 17vh;
+    margin-left: 6vw;
+  }
+  
 
 }
 
