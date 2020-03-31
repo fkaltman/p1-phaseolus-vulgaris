@@ -11,7 +11,7 @@ body {
 }
 
 .hero-title {
-  margin-top: 12vh;
+  margin-top: 18vh;
   font-size: 2.2em;
   color: #e6c63b;
   padding-bottom: 2vh;
@@ -24,7 +24,7 @@ body {
   font-size: 1em;
   font-family: 'Chango', cursive;
   text-align: center;
-  color: rgb(39, 38, 38);
+  color: rgb(59, 55, 55);
 }
 
 #muse-hidden-text-desktop {
@@ -39,8 +39,8 @@ body {
 #click-beanie {
   font-size: 15px;
   text-align: left;
-  padding-top: 37vh;
-  margin-left: 6vw;
+  padding-top: 30vh;
+  margin-left: 14vw;
   font-family: 'Chango', cursive;
   color: blanchedalmond;
 }
@@ -184,7 +184,7 @@ and (min-width: 1201px) {
   }
 
   #muse-hidden-text-desktop {
-    margin-top: 10vh;
+    margin-top: 6vh;
   }
 
   #click-beanie {
@@ -193,7 +193,6 @@ and (min-width: 1201px) {
     padding-top: 17vh;
     margin-left: 6vw;
   }
-  
 
 }
 
@@ -204,7 +203,7 @@ and (min-width: 760px) and (max-width: 1200px){
   }
 
   #muse-hidden-text-desktop {
-    margin-top: 10vh;
+    margin-top: 8vh;
     font-size: 26px;
   }
 
@@ -222,11 +221,6 @@ and (min-width: 760px)
     position: fixed;
     bottom: 0;
     right: 0;
-  }
-  
-  #muse {
-    margin-top: 8vh;
-    font-size: 26px; 
   }
   
   #muse-text {
