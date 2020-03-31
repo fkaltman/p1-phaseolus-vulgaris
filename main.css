@@ -75,9 +75,10 @@ h2 {
 
 #click-me {
   text-align: center;
-  color: rgb(60, 107, 109);
+  color:rgb(51, 43, 29);
   font-size: 13px;
   text-transform: uppercase;
+  font-family: 'Chango', cursive;
 }
 
 #recipelink {
@@ -134,12 +135,6 @@ the bean in an environment with mouse use. */
   margin-top: 2vh;
   margin-left: auto;
   margin-right: auto;
-}
-
-#click-me {
-  font-size: 12px;
-  font-family: 'Chango', cursive;
-  color: cadetblue;
 }
 
 /* Used keyframes tutorial on w3 for the animation below.
@@ -242,14 +237,11 @@ and (min-width: 760px)
 
   
   #click-me {
-    text-align: center;
-    color: rgb(109, 60, 72);
     font-size: 18px;
-    text-transform: uppercase;
   }
   
   #recipelink {
-    font-size: 20px; 
+    font-size: 2em; 
     text-decoration: bold;
     color: rgb(230, 198, 59);
     font-family: 'Chango', cursive;
@@ -263,12 +255,7 @@ and (min-width: 760px)
     margin-left: auto;
     margin-right: auto;
   }
-  
-  #click-me {
-    font-size: 12px;
-    font-family: 'Chango', cursive;
-    color: cadetblue;
-  }
+
 }
 
 
