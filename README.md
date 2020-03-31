@@ -5,7 +5,7 @@ http://beansearch.surge.sh
 
 ##### This app is a simple homage to the humble black bean. The design is mobil centric, because I think most poeple view recipe websites on their mobile devices.
 
-<img src="images/bean_app_pg1.png" alt="bean app page 1" width="250"/><img src="images/bean_app_pg2.png" alt="bean app page 2" width="250"/>
+<img src="images/bean_iphone11.png" alt="bean app page 1" width="250"/><img src="images/bean2_iphone11.png" alt="bean app page 2" width="250"/>
 
 This app incorporates HTML, CSS, JavaScript, and pulls external data from the Edamam API, allowing the user to search for vegetarian recipes featuring black beans. The Edamam API allows a generous 5000 calls per month through the Developer option but limits API calls to 5 per minute, which is rather limiting for a recipe search website where the user might have to flip, tinder-style, through several recipies before something strikes them as yummy.  This problem would be eliminated if the developer had signed up for either the Startup or Enterprise packages, both of which allow more calls per minute to the API (15 and unlimited, respectively).  However, because the app was developed for learning purposes only she has decided to keep the app running with the free "Developer" package.
 
