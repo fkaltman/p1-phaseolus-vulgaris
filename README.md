@@ -3,7 +3,7 @@
 http://beansearch.surge.sh
 
 
-##### This app is a simple homage to the humble black bean. The design is mobil centric, because I think most poeple view recipe websites on their mobile devices.
+##### This app is a simple homage to the humble black bean. The design is mobil centric, because I think most people view recipe websites on their mobile devices.
 
 <img src="images/bean_iphone11.png" alt="bean app page 1" width="250"/><img src="images/bean2_iphone11.png" alt="bean app page 2" width="250"/>
 
